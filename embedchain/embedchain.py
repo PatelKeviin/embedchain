@@ -150,7 +150,7 @@ class EmbedChain(JSONSerializable):
         :type config: Optional[AddConfig], optional
         :raises ValueError: Invalid data type
         :param dry_run: Optional. A dry run displays the chunks to ensure that the loader and chunker work as intended.
-        deafaults to False
+        defaults to False
         :return: source_hash, a md5-hash of the source, in hexadecimal representation.
         :rtype: str
         """

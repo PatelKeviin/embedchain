@@ -9,4 +9,4 @@ class BaseLoader(JSONSerializable):
         """
         Implemented by child classes
         """
-        pass
+        raise NotImplementedError("To be implemented by child classes.")

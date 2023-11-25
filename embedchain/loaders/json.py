@@ -15,12 +15,11 @@ class JSONLoader(BaseLoader):
     @staticmethod
     def _get_llama_hub_loader():
         try:
-            from llama_hub.jsondata.base import \
-                JSONDataReader as LLHUBJSONLoader
+            from llama_hub.jsondata.base import JSONDataReader as LLHUBJSONLoader
         except ImportError as e:
             raise Exception(
                 f"Failed to install required packages: {e}, \
-                install them using `pip install --upgrade 'embedchain[json]`"
+                install them using `pip install --upgrade 'embedchain[json]'`"
             )
 
         return LLHUBJSONLoader()
@@ -31,7 +30,7 @@ class JSONLoader(BaseLoader):
             raise ValueError(
                 "Invaid content input. \
                 If you want to upload (list, dict, etc.), do \
-                    `json.dump(data, indent=0)` and add the stringified JSON. \
+                    `json.dumps(data, indent=0)` and add the stringified JSON. \
                         Check - `https://docs.embedchain.ai/data-sources/json`"
             )
 

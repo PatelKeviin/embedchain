@@ -18,7 +18,7 @@ class DataFormatter(JSONSerializable):
 
     def __init__(self, data_type: DataType, config: AddConfig, kwargs: Dict[str, Any]):
         """
-        Initialize a dataformatter, set data type and chunker based on datatype.
+        Initialize a dataformatter, set loader and chunker based on datatype.
 
         :param data_type: The type of the data to load and chunk.
         :type data_type: DataType
